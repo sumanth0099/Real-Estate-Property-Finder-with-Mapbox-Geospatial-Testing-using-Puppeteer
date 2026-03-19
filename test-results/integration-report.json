@@ -1,0 +1,306 @@
+{
+  "timestamp": "2026-03-13T15:13:25.165Z",
+  "appUrl": "http://localhost:3006",
+  "suites": [
+    {
+      "file": "map-initialization.test.js",
+      "suite": "Map Initialization",
+      "tests": [
+        {
+          "name": "should have properties-container element on /properties",
+          "status": "passed",
+          "duration": 3411
+        },
+        {
+          "name": "should have map-container element",
+          "status": "passed",
+          "duration": 2569
+        },
+        {
+          "name": "should have property-list element",
+          "status": "passed",
+          "duration": 2439
+        },
+        {
+          "name": "should have view-toggle element",
+          "status": "passed",
+          "duration": 2887
+        },
+        {
+          "name": "should show map-loaded indicator after map loads",
+          "status": "failed",
+          "error": "Navigation timeout of 30000 ms exceeded",
+          "duration": 31539
+        },
+        {
+          "name": "should render property cards in list",
+          "status": "passed",
+          "duration": 2858
+        },
+        {
+          "name": "should have map markers for properties",
+          "status": "passed",
+          "duration": 22098
+        },
+        {
+          "name": "should have at least 30 properties in mock data",
+          "status": "passed",
+          "duration": 1909
+        },
+        {
+          "name": "first property card should have all required data-testid attributes",
+          "status": "passed",
+          "duration": 2487
+        }
+      ],
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    {
+      "file": "location-autocomplete.test.js",
+      "suite": "Location Autocomplete",
+      "tests": [
+        {
+          "name": "should have location-autocomplete input on /properties",
+          "status": "passed",
+          "duration": 2475
+        },
+        {
+          "name": "should show autocomplete suggestions when typing",
+          "status": "passed",
+          "duration": 6922
+        },
+        {
+          "name": "should show suggestion-0 element after typing",
+          "status": "passed",
+          "duration": 5308
+        },
+        {
+          "name": "should center map when autocomplete suggestion is selected",
+          "status": "failed",
+          "error": "Navigation timeout of 30000 ms exceeded",
+          "duration": 31592
+        },
+        {
+          "name": "should clear autocomplete when selecting a suggestion",
+          "status": "passed",
+          "duration": 7702
+        },
+        {
+          "name": "should have location-autocomplete on /search page",
+          "status": "passed",
+          "duration": 2800
+        }
+      ],
+      "total": 6,
+      "passed": 5,
+      "failed": 1
+    },
+    {
+      "file": "geospatial-search.test.js",
+      "suite": "Geospatial Search",
+      "tests": [
+        {
+          "name": "should have search-radius-slider on /properties",
+          "status": "passed",
+          "duration": 3007
+        },
+        {
+          "name": "should have draw-boundary-button",
+          "status": "passed",
+          "duration": 2643
+        },
+        {
+          "name": "should have apply-filters-button",
+          "status": "passed",
+          "duration": 3101
+        },
+        {
+          "name": "should have results-count element",
+          "status": "passed",
+          "duration": 2849
+        },
+        {
+          "name": "radius slider should change value and filter results",
+          "status": "passed",
+          "duration": 4868
+        },
+        {
+          "name": "applying price filter should change results count",
+          "status": "passed",
+          "duration": 4227
+        },
+        {
+          "name": "draw-boundary-button click should toggle drawing mode",
+          "status": "passed",
+          "duration": 3219
+        },
+        {
+          "name": "boundary-active element should appear when boundary is active",
+          "status": "passed",
+          "duration": 2912
+        },
+        {
+          "name": "geospatial filtering uses haversine distance calculation",
+          "status": "passed",
+          "duration": 3194
+        },
+        {
+          "name": "should have all search filter elements on /search page",
+          "status": "passed",
+          "duration": 2829
+        }
+      ],
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "file": "map-interactions.test.js",
+      "suite": "Map Interactions",
+      "tests": [
+        {
+          "name": "should have map markers with correct data-testid format",
+          "status": "failed",
+          "error": "Navigation timeout of 30000 ms exceeded",
+          "duration": 31623
+        },
+        {
+          "name": "clicking a map marker should highlight corresponding property card",
+          "status": "failed",
+          "error": "Navigation timeout of 30000 ms exceeded",
+          "duration": 31110
+        },
+        {
+          "name": "clicking a property card should set highlighted state",
+          "status": "passed",
+          "duration": 3304
+        },
+        {
+          "name": "view toggle buttons should work",
+          "status": "passed",
+          "duration": 28448
+        },
+        {
+          "name": "property card save button should toggle save state",
+          "status": "passed",
+          "duration": 5176
+        },
+        {
+          "name": "number of map markers should match number of visible properties",
+          "status": "failed",
+          "error": "Navigation timeout of 30000 ms exceeded",
+          "duration": 31432
+        }
+      ],
+      "total": 6,
+      "passed": 3,
+      "failed": 3
+    },
+    {
+      "file": "property-filtering.test.js",
+      "suite": "Property Filtering",
+      "tests": [
+        {
+          "name": "should filter by price range (min)",
+          "status": "passed",
+          "duration": 6179
+        },
+        {
+          "name": "should filter by price range (max)",
+          "status": "passed",
+          "duration": 7782
+        },
+        {
+          "name": "should filter by bedrooms",
+          "status": "passed",
+          "duration": 4763
+        },
+        {
+          "name": "results-count should update after filter applied",
+          "status": "passed",
+          "duration": 16910
+        },
+        {
+          "name": "property detail page should have all required elements",
+          "status": "passed",
+          "duration": 3572
+        },
+        {
+          "name": "property detail page should display correct property data",
+          "status": "passed",
+          "duration": 2707
+        },
+        {
+          "name": "property detail should show nearby amenities",
+          "status": "passed",
+          "duration": 3112
+        },
+        {
+          "name": "navigating to invalid property id should handle gracefully",
+          "status": "passed",
+          "duration": 2721
+        },
+        {
+          "name": "clearing price filter should restore all results",
+          "status": "passed",
+          "duration": 56078
+        }
+      ],
+      "total": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "file": "saved-searches.test.js",
+      "suite": "Saved Searches",
+      "tests": [
+        {
+          "name": "should show no-saved-searches element when empty",
+          "status": "passed",
+          "duration": 57365
+        },
+        {
+          "name": "saved-searches route should be accessible",
+          "status": "passed",
+          "duration": 21749
+        },
+        {
+          "name": "save search button should exist on properties page",
+          "status": "passed",
+          "duration": 12195
+        },
+        {
+          "name": "saving a search should add it to saved-searches page",
+          "status": "passed",
+          "duration": 21642
+        },
+        {
+          "name": "saved-searches page should have correct empty state structure",
+          "status": "passed",
+          "duration": 16512
+        },
+        {
+          "name": "navigation between pages should work correctly",
+          "status": "passed",
+          "duration": 9875
+        },
+        {
+          "name": "load-search button format should be correct when searches exist",
+          "status": "passed",
+          "duration": 8911
+        }
+      ],
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    }
+  ],
+  "summary": {
+    "total": 47,
+    "passed": 42,
+    "failed": 5,
+    "skipped": 0
+  }
+}

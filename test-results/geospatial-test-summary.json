@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-03-13T15:13:25.166Z",
+  "tests": [
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have properties-container element on /properties",
+      "status": "passed",
+      "duration": 3411
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have map-container element",
+      "status": "passed",
+      "duration": 2569
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have property-list element",
+      "status": "passed",
+      "duration": 2439
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have view-toggle element",
+      "status": "passed",
+      "duration": 2887
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should show map-loaded indicator after map loads",
+      "status": "failed",
+      "error": "Navigation timeout of 30000 ms exceeded",
+      "duration": 31539
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should render property cards in list",
+      "status": "passed",
+      "duration": 2858
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have map markers for properties",
+      "status": "passed",
+      "duration": 22098
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "should have at least 30 properties in mock data",
+      "status": "passed",
+      "duration": 1909
+    },
+    {
+      "suite": "map-initialization.test.js",
+      "name": "first property card should have all required data-testid attributes",
+      "status": "passed",
+      "duration": 2487
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "should have search-radius-slider on /properties",
+      "status": "passed",
+      "duration": 3007
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "should have draw-boundary-button",
+      "status": "passed",
+      "duration": 2643
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "should have apply-filters-button",
+      "status": "passed",
+      "duration": 3101
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "should have results-count element",
+      "status": "passed",
+      "duration": 2849
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "radius slider should change value and filter results",
+      "status": "passed",
+      "duration": 4868
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "applying price filter should change results count",
+      "status": "passed",
+      "duration": 4227
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "draw-boundary-button click should toggle drawing mode",
+      "status": "passed",
+      "duration": 3219
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "boundary-active element should appear when boundary is active",
+      "status": "passed",
+      "duration": 2912
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "geospatial filtering uses haversine distance calculation",
+      "status": "passed",
+      "duration": 3194
+    },
+    {
+      "suite": "geospatial-search.test.js",
+      "name": "should have all search filter elements on /search page",
+      "status": "passed",
+      "duration": 2829
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "should have map markers with correct data-testid format",
+      "status": "failed",
+      "error": "Navigation timeout of 30000 ms exceeded",
+      "duration": 31623
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "clicking a map marker should highlight corresponding property card",
+      "status": "failed",
+      "error": "Navigation timeout of 30000 ms exceeded",
+      "duration": 31110
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "clicking a property card should set highlighted state",
+      "status": "passed",
+      "duration": 3304
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "view toggle buttons should work",
+      "status": "passed",
+      "duration": 28448
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "property card save button should toggle save state",
+      "status": "passed",
+      "duration": 5176
+    },
+    {
+      "suite": "map-interactions.test.js",
+      "name": "number of map markers should match number of visible properties",
+      "status": "failed",
+      "error": "Navigation timeout of 30000 ms exceeded",
+      "duration": 31432
+    }
+  ],
+  "summary": {
+    "total": 25,
+    "passed": 21,
+    "failed": 4
+  }
+}
