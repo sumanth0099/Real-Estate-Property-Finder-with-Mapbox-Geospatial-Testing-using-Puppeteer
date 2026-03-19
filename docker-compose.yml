@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN:-pk.test.mock-token-for-testing-purposes}
+        - REACT_APP_MAPBOX_STYLE=${MAPBOX_STYLE:-mapbox://styles/mapbox/streets-v11}
+    ports:
+      - "3006:3006"
+    environment:
+      - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN:-pk.test.mock-token-for-testing-purposes}
+      - MAPBOX_STYLE=${MAPBOX_STYLE:-mapbox://styles/mapbox/streets-v11}
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3006"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    networks:
+      - app-network
+
+  puppeteer-integration-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      - APP_URL=http://app:3006
+      - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN:-pk.test.mock-token-for-testing-purposes}
+      - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+    volumes:
+      - ./test-results:/app/test-results
+    command: ["node", "tests/integration/run-tests.js"]
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
