@@ -1,0 +1,54 @@
+{
+  "suite": "Map Initialization",
+  "tests": [
+    {
+      "name": "should have properties-container element on /properties",
+      "status": "passed",
+      "duration": 1844
+    },
+    {
+      "name": "should have map-container element",
+      "status": "passed",
+      "duration": 2348
+    },
+    {
+      "name": "should have property-list element",
+      "status": "passed",
+      "duration": 1935
+    },
+    {
+      "name": "should have view-toggle element",
+      "status": "passed",
+      "duration": 2208
+    },
+    {
+      "name": "should show map-loaded indicator after map loads",
+      "status": "failed",
+      "error": "Navigation timeout of 30000 ms exceeded",
+      "duration": 31232
+    },
+    {
+      "name": "should render property cards in list",
+      "status": "passed",
+      "duration": 2522
+    },
+    {
+      "name": "should have map markers for properties",
+      "status": "passed",
+      "duration": 23370
+    },
+    {
+      "name": "should have at least 30 properties in mock data",
+      "status": "passed",
+      "duration": 1902
+    },
+    {
+      "name": "first property card should have all required data-testid attributes",
+      "status": "passed",
+      "duration": 2219
+    }
+  ],
+  "total": 9,
+  "passed": 8,
+  "failed": 1
+}
